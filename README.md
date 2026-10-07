@@ -42,12 +42,14 @@ API REST desenvolvida para gerenciamento e agendamento de **salas**, **usuários
   Configure as credenciais:
 Ajuste as propriedades do banco de dados no arquivo src/main/resources/application.properties:
 
+```sql
 Properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/reserva_de_salas
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 Execute a aplicação:
 Na raiz do projeto, execute o comando:
+```
 
 Bash
 ./mvnw spring-boot:run
@@ -80,6 +82,7 @@ DELETE	/api/v1/reservas/{id}	Deleta uma reserva
 📝 Exemplo de JSON (Criar Reserva)
 POST /api/v1/reservas
 
+```sql
 JSON
 {
   "sala": { "id": 1 },
@@ -90,8 +93,3 @@ JSON
   "status": "ATIVA"
 }
 
-### O que mudou e foi melhorado:
-* **Tabelas de Rotas:** Organizadas separadamente por recurso (`Salas`, `Usuários`, `Reservas`) com verbo HTTP, caminho e descrição.
-* **Exemplo Prático de JSON:** Incluído o corpo de requisição para testes rápidos via Postman/Insomnia.
-* **Seção de Regras de Negócio:** Destaca as validações que você implementou na aplicação.
-* **Instruções Limpas:** Passo a passo com SQL para criação do banco e ajuste do `application.properties`.
