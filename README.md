@@ -64,6 +64,9 @@ POST	/api/v1/salas	Cadastra uma nova sala
 PUT	/api/v1/salas/{id}	Atualiza dados de uma sala
 PUT	/api/v1/salas/{id}/desativar	Desativa uma sala
 DELETE	/api/v1/salas/{id}	Deleta uma sala
+
+---
+
 👤 Usuários (/api/v1/usuarios)
 Método	Rota	Descrição
 GET	/api/v1/usuarios	Lista todos os usuários
@@ -71,6 +74,9 @@ GET	/api/v1/usuarios/{id}	Busca usuário por ID
 POST	/api/v1/usuarios	Cadastra um novo usuário
 PUT	/api/v1/usuarios/{id}	Atualiza dados de um usuário
 DELETE	/api/v1/usuarios/{id}	Remove um usuário
+
+---
+
 📅 Reservas (/api/v1/reservas)
 Método	Rota	Descrição
 GET	/api/v1/reservas	Lista todas as reservas
@@ -79,6 +85,7 @@ POST	/api/v1/reservas	Cria uma nova reserva
 PUT	/api/v1/reservas/{id}	Atualiza dados de uma reserva
 PUT	/api/v1/reservas/{id}/cancelar	Cancela uma reserva
 DELETE	/api/v1/reservas/{id}	Deleta uma reserva
+---
 📝 Exemplo de JSON (Criar Reserva)
 POST /api/v1/reservas
 
